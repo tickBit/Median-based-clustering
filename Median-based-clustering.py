@@ -26,7 +26,7 @@ random.shuffle(shuffled_D)
 
 # Initial centroids
 # "randomness" as I would do it with pen and paper:
-# select two first points from shuffled original dataset
+# select k first points from shuffled original dataset
 
 centroids = [[None]]*k
 prev_centroids = [[None]]*k
