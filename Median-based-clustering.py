@@ -81,8 +81,8 @@ while True:
     points_by_clusters = []
     
     # Save points by cluster
-    # Here we create k lists so that the points belonging to cluster k
-    # are in list k
+    # Here we create k lists so that the points belonging to cluster i
+    # are in list i
     for i in range(k):
         temp = []
         for a in assignments:
