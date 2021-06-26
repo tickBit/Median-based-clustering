@@ -37,8 +37,6 @@ for i in range(k):
 
 iterations = 0
 
-ready = True
-
 # Main loop
 while True:
 
@@ -124,11 +122,10 @@ while True:
               (valuey[a][math.floor((len(valuey[a]))/2)] + valuey[a][math.floor((len(valuey[a])) / 2 - 1)])  / 2.0]
 
     # Does the centroids change?
+    ready = True
     for a in range(k):
         if prev_centroids[a] != centroids[a]:
             ready = False
-        else:
-            ready = True
 
     if ready == True: break
 
