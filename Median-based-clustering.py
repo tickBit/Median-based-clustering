@@ -42,7 +42,7 @@ while True:
 
     iterations += 1
 
-    # tässä vaiheessa edelliset centroidit ovat nykyiset centroidit
+    # at this point previous centroids are the current centroids
     for a in range(k):
         prev_centroids[a] = centroids[a][:]  
     
@@ -52,7 +52,7 @@ while True:
         lst = [] 
         for i in range(len(D)):
                  
-            # Manhattan distances for the centroids
+            # Manhattan distances from the centroids
             # save index of a point and the distance of the point from centroid
             lst.extend([(i,abs(D[i][0]-centroids[a][0]) + abs(D[i][1]-centroids[a][1]))])
             
